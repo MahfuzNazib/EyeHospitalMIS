@@ -1,0 +1,1 @@
+This is Script Folder. In this folder, we are putting all of our DB scripts like Store Procedure, VIEWS, etc.
