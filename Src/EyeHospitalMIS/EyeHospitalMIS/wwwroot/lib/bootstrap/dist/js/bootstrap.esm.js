@@ -409,7 +409,7 @@ function findHandler(events, handler, delegationSelector = null) {
   return null;
 }
 
-function normalizeParams(originalTypeEvent, handler, delegationFn) {
+function normalizeparams(originalTypeEvent, handler, delegationFn) {
   const delegation = typeof handler === 'string';
   const originalHandler = delegation ? delegationFn : handler;
   let typeEvent = getTypeEvent(originalTypeEvent);
@@ -450,7 +450,7 @@ function addHandler(element, originalTypeEvent, handler, delegationFn, oneOff) {
     }
   }
 
-  const [delegation, originalHandler, typeEvent] = normalizeParams(originalTypeEvent, handler, delegationFn);
+  const [delegation, originalHandler, typeEvent] = normalizeparams(originalTypeEvent, handler, delegationFn);
   const events = getEvent(element);
   const handlers = events[typeEvent] || (events[typeEvent] = {});
   const previousFn = findHandler(handlers, originalHandler, delegation ? handler : null);
@@ -511,7 +511,7 @@ const EventHandler = {
       return;
     }
 
-    const [delegation, originalHandler, typeEvent] = normalizeParams(originalTypeEvent, handler, delegationFn);
+    const [delegation, originalHandler, typeEvent] = normalizeparams(originalTypeEvent, handler, delegationFn);
     const inNamespace = typeEvent !== originalTypeEvent;
     const events = getEvent(element);
     const isNamespace = originalTypeEvent.startsWith('.');

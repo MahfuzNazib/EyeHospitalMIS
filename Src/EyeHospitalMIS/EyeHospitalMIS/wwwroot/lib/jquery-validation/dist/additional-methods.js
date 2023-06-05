@@ -47,7 +47,7 @@
 $.validator.addMethod( "accept", function( value, element, param ) {
 
 	// Split mime on commas in case we have multiple types we can accept
-	var typeParam = typeof param === "string" ? param.replace( /\s/g, "" ) : "image/*",
+	var typeparam = typeof param === "string" ? param.replace( /\s/g, "" ) : "image/*",
 		optionalValue = this.optional( element ),
 		i, file, regex;
 
@@ -61,14 +61,14 @@ $.validator.addMethod( "accept", function( value, element, param ) {
 		// Escape string to be used in the regex
 		// see: https://stackoverflow.com/questions/3446170/escape-string-for-use-in-javascript-regex
 		// Escape also "/*" as "/.*" as a wildcard
-		typeParam = typeParam
+		typeparam = typeparam
 				.replace( /[\-\[\]\/\{\}\(\)\+\?\.\\\^\$\|]/g, "\\$&" )
 				.replace( /,/g, "|" )
 				.replace( /\/\*/g, "/.*" );
 
 		// Check if the element has a FileList before checking each file
 		if ( element.files && element.files.length ) {
-			regex = new RegExp( ".?(" + typeParam + ")$", "i" );
+			regex = new RegExp( ".?(" + typeparam + ")$", "i" );
 			for ( i = 0; i < element.files.length; i++ ) {
 				file = element.files[ i ];
 
@@ -457,9 +457,9 @@ $.validator.addMethod( "creditcardtypes", function( value, element, param ) {
  *  }
  */
 $.validator.addMethod( "currency", function( value, element, param ) {
-    var isParamString = typeof param === "string",
-        symbol = isParamString ? param : param[ 0 ],
-        soft = isParamString ? true : param[ 1 ],
+    var isparamString = typeof param === "string",
+        symbol = isparamString ? param : param[ 0 ],
+        soft = isparamString ? true : param[ 1 ],
         regex;
 
     symbol = symbol.replace( /,/g, "" );

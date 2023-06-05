@@ -8882,7 +8882,7 @@ var
 	rsubmitterTypes = /^(?:submit|button|image|reset|file)$/i,
 	rsubmittable = /^(?:input|select|textarea|keygen)/i;
 
-function buildParams( prefix, obj, traditional, add ) {
+function buildparams( prefix, obj, traditional, add ) {
 	var name;
 
 	if ( Array.isArray( obj ) ) {
@@ -8897,7 +8897,7 @@ function buildParams( prefix, obj, traditional, add ) {
 			} else {
 
 				// Item is non-scalar (array or object), encode its numeric index.
-				buildParams(
+				buildparams(
 					prefix + "[" + ( typeof v === "object" && v != null ? i : "" ) + "]",
 					v,
 					traditional,
@@ -8910,7 +8910,7 @@ function buildParams( prefix, obj, traditional, add ) {
 
 		// Serialize object item.
 		for ( name in obj ) {
-			buildParams( prefix + "[" + name + "]", obj[ name ], traditional, add );
+			buildparams( prefix + "[" + name + "]", obj[ name ], traditional, add );
 		}
 
 	} else {
@@ -8953,7 +8953,7 @@ jQuery.param = function( a, traditional ) {
 		// If traditional, encode the "old" way (the way 1.3.2 or older
 		// did it), otherwise encode params recursively.
 		for ( prefix in a ) {
-			buildParams( prefix, a[ prefix ], traditional, add );
+			buildparams( prefix, a[ prefix ], traditional, add );
 		}
 	}
 
