@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nazib\\.nuget\\packages\\": {}
+    "C:\\Users\\Nazib.m\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
+      "projectUniqueName": "E:\\Learning\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
       "projectName": "EyeHospitalMIS",
-      "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
-      "packagesPath": "C:\\Users\\nazib\\.nuget\\packages\\",
-      "outputPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\obj\\",
+      "projectPath": "E:\\Learning\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
+      "packagesPath": "C:\\Users\\Nazib.m\\.nuget\\packages\\",
+      "outputPath": "E:\\Learning\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nazib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nazib.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
