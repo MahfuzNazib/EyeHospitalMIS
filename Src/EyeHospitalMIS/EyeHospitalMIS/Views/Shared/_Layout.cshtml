@@ -11,7 +11,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="~/images/favicon.ico">
 
-    @await Html.PartialAsync("_Css");
+    @await Html.PartialAsync("_Css")
 
     @RenderSection("Scripts", required: false)
 
@@ -24,7 +24,7 @@
 
     <header id="page-topbar">
         <div class="layout-width">
-            @await Html.PartialAsync("_TopHeader");
+            @await Html.PartialAsync("_TopHeader")
         </div>
     </header>
     
@@ -34,7 +34,7 @@
 
         <!-- Left Sidebar Start -->
         <div class="app-menu navbar-menu">
-            @await Html.PartialAsync("_Sidebar");
+            @await Html.PartialAsync("_Sidebar")
         </div>
         <!-- Left Sidebar End -->
 
@@ -92,12 +92,12 @@
 
     <!-- Theme Settings -->
     <div class="offcanvas offcanvas-end border-0" tabindex="-1" id="theme-settings-offcanvas">
-        @await Html.PartialAsync("_ThemeSetup");
+        @await Html.PartialAsync("_ThemeSetup")
     </div>
 
 
     <!-- JavaScript Start -->
-    @await Html.PartialAsync("_JavaScript");
+    @await Html.PartialAsync("_JavaScript")
     <!-- JavaScript End -->
 </body>
 
