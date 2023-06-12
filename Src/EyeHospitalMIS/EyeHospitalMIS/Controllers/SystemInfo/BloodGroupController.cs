@@ -4,9 +4,11 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
 {
     public class BloodGroupController : Controller
     {
+        private string bloodGroupViewPath = "SystemInfo/BloodGroup/";
+        
         public IActionResult Index()
         {
-            return View();
+            return View(bloodGroupViewPath+"Index");
         }
     }
 }

@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Controllers\Doctor\" />
-    <Folder Include="Views\BloodGroup\" />
     <Folder Include="Views\Doctor\" />
     <Folder Include="Views\SystemInfo\Department\" />
   </ItemGroup>
