@@ -6,15 +6,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="Controllers\Doctor\**" />
-    <Content Remove="Controllers\Doctor\**" />
-    <EmbeddedResource Remove="Controllers\Doctor\**" />
-    <None Remove="Controllers\Doctor\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Views\Doctor\" />
-  </ItemGroup>
-
 </Project>

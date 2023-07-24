@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Software's\ASP.NET\EyeHospitalMIS\Src\EyeHospitalMIS\EyeHospitalMIS
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/Doctor/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/Doctor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
