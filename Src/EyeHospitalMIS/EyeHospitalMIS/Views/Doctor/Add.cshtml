@@ -51,11 +51,9 @@
                                                     <div class="tab-content">
 
                                                         <!-- General Info Start -->
-                                                        <div class="tab-pane fade" id="v-pills-general-info" role="tabpanel" aria-labelledby="v-pills-general-info-tab">
+                                                            <div class="tab-pane fade show active" id="v-pills-general-info" role="tabpanel" aria-labelledby="v-pills-general-info-tab">
                                                             <div>
-                                                                <blockquote class="blockquote custom-blockquote blockquote-primary rounded mb-0">
-                                                                    <p class="text-dark mb-2">General Information</p>
-                                                                </blockquote>
+                                                                <h5>General Information</h5>
                                                             </div>
 
                                                             <div>
@@ -133,70 +131,60 @@
                                                             </div>
 
                                                             <div class="d-flex align-items-start gap-3 mt-4">
-                                                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-bmdc-info-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Shipping</button>
+                                                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-bmdc-info-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to BMDC Info</button>
                                                             </div>
                                                         </div>
                                                         <!-- General Info End -->
 
                                                         <!-- BM&DC Info Start -->
-                                                        <div class="tab-pane fade show active" id="v-pills-bmdc-info" role="tabpanel" aria-labelledby="v-pills-bmdc-info-tab">
+                                                        <div class="tab-pane fade" id="v-pills-bmdc-info" role="tabpanel" aria-labelledby="v-pills-bmdc-info-tab">
                                                             <div>
-                                                                <h5>Shipping Address</h5>
-                                                                <p class="text-muted">Fill all information below</p>
+                                                                <h5>BM & DC Information</h5>
                                                             </div>
 
                                                             <div>
                                                                 <div class="row g-3">
-                                                                    <div class="col-12">
-                                                                        <label for="address" class="form-label">Address</label>
-                                                                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required >
+                                                                    <div class="col-6">
+                                                                        <label for="address" class="form-label">BMDC Registration No</label>
+                                                                        <input type="text" class="form-control" id="address" placeholder="" required >
                                                                         <div class="invalid-feedback">Please enter a address</div>
                                                                     </div>
 
-                                                                    <div class="col-12">
-                                                                        <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-                                                                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite" />
+                                                                    <div class="col-6">
+                                                                        <label for="address2" class="form-label">Passing Year <span class="text-muted">(Optional)</span></label>
+                                                                        <input type="text" class="form-control" id="address2" placeholder="" />
                                                                     </div>
 
-                                                                    <div class="col-md-5">
-                                                                        <label for="country" class="form-label">Country</label>
+                                                                    <div class="col-md-6">
+                                                                        <label for="country" class="form-label">Department</label>
                                                                         <select class="form-select" id="country" required>
                                                                             <option value="">Choose...</option>
-                                                                            <option>United States</option>
+                                                                            <option>Medicine</option>
+                                                                            <option>Authropedix</option>
+                                                                            <option>Gynee</option>
                                                                         </select>
                                                                         <div class="invalid-feedback">Please select a country</div>
                                                                     </div>
 
-                                                                    <div class="col-md-4">
-                                                                        <label for="state" class="form-label">State</label>
+                                                                    <div class="col-md-6">
+                                                                        <label for="state" class="form-label">Desingation</label>
                                                                         <select class="form-select" id="state">
                                                                             <option value="">Choose...</option>
-                                                                            <option>California</option>
+                                                                            <option>Professor</option>
                                                                         </select>
                                                                         <div class="invalid-feedback">Please select a state</div>
                                                                     </div>
 
-                                                                    <div class="col-md-3">
-                                                                        <label for="zip" class="form-label">Zip</label>
-                                                                        <input type="text" class="form-control" id="zip" placeholder="" />
+                                                                    <div class="col-md-12">
+                                                                        <label for="zip" class="form-label">Educational Qualification</label>
+                                                                        <textarea class="form-control"></textarea>
                                                                     </div>
                                                                 </div>
 
-                                                                <hr class="my-4 text-muted">
-
-                                                                <div class="form-check mb-2">
-                                                                    <input type="checkbox" class="form-check-input" id="same-address">
-                                                                    <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
-                                                                </div>
-
-                                                                <div class="form-check">
-                                                                    <input type="checkbox" class="form-check-input" id="save-info">
-                                                                    <label class="form-check-label" for="save-info">Save this information for next time</label>
-                                                                </div>
                                                             </div>
                                                             <div class="d-flex align-items-start gap-3 mt-4">
-                                                                <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-general-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Billing Info</button>
-                                                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-fee-info-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Payment</button>
+                                                                <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-general-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to General Info</button>
+                                                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-fee-info-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i>Go to Fee Info</button>
                                                             </div>
                                                         </div>
                                                         <!-- BM&DC Info End -->
@@ -204,65 +192,32 @@
                                                         <!-- Fee Info Start -->
                                                         <div class="tab-pane fade" id="v-pills-fee-info" role="tabpanel" aria-labelledby="v-pills-fee-info-tab">
                                                             <div>
-                                                                <h5>Payment</h5>
-                                                                <p class="text-muted">Fill all information below</p>
+                                                                <h5>Fee Information</h5>
                                                             </div>
 
                                                             <div>
-                                                                <div class="my-3">
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                                                                        <label class="form-check-label" for="credit">Credit card</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                                                                        <label class="form-check-label" for="debit">Debit card</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                                                                        <label class="form-check-label" for="paypal">PayPal</label>
-                                                                    </div>
-                                                                </div>
-
                                                                 <div class="row gy-3">
-                                                                    <div class="col-md-12">
-                                                                        <label for="cc-name" class="form-label">Name on card</label>
-                                                                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                                                        <small class="text-muted">Full name as displayed on card</small>
+                                                                    <div class="col-md-6">
+                                                                        <label for="cc-name" class="form-label">New Patient Fee</label>
+                                                                        <input type="number" class="form-control" id="cc-name" placeholder="" required>
                                                                         <div class="invalid-feedback">
                                                                             Name on card is required
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-6">
-                                                                        <label for="cc-number" class="form-label">Credit card number</label>
-                                                                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                                                        <label for="cc-number" class="form-label">Old Patient Fee</label>
+                                                                        <input type="number" class="form-control" placeholder="" required>
                                                                         <div class="invalid-feedback">
                                                                             Credit card number is required
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-3">
-                                                                        <label for="cc-expiration" class="form-label">Expiration</label>
-                                                                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                                                                        <div class="invalid-feedback">
-                                                                            Expiration date required
-                                                                        </div>
-                                                                    </div>
-
-                                                                    <div class="col-md-3">
-                                                                        <label for="cc-cvv" class="form-label">CVV</label>
-                                                                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                                                        <div class="invalid-feedback">
-                                                                            Security code required
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
 
                                                             <div class="d-flex align-items-start gap-3 mt-4">
-                                                                <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bmdc-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to Shipping Info</button>
-                                                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-finish-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Order Complete</button>
+                                                                <button type="button" class="btn btn-light btn-label previestab" data-previous="v-pills-bmdc-info-tab"><i class="ri-arrow-left-line label-icon align-middle fs-16 me-2"></i> Back to BMDC Info</button>
+                                                                <button type="button" class="btn btn-success btn-label right ms-auto nexttab nexttab" data-nexttab="v-pills-finish-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Go To Time Schedule</button>
                                                             </div>
                                                         </div>
                                                         <!-- Fee Info End -->
@@ -271,57 +226,69 @@
                                                             <div class="tab-pane fade" id="v-pills-time-schedule-info" role="tabpanel" aria-labelledby="v-pills-time-schedule-info-tab">
                                                             <div>
                                                                 <h5>Room & Time Schedule</h5>
-                                                                <p class="text-muted">Fill all information below</p>
                                                             </div>
 
                                                             <div>
-                                                                <div class="my-3">
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                                                                        <label class="form-check-label" for="credit">Credit card</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                                                                        <label class="form-check-label" for="debit">Debit card</label>
-                                                                    </div>
-                                                                    <div class="form-check form-check-inline">
-                                                                        <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                                                                        <label class="form-check-label" for="paypal">PayPal</label>
-                                                                    </div>
-                                                                </div>
-
                                                                 <div class="row gy-3">
-                                                                    <div class="col-md-12">
-                                                                        <label for="cc-name" class="form-label">Name on card</label>
-                                                                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                                                        <small class="text-muted">Full name as displayed on card</small>
-                                                                        <div class="invalid-feedback">
-                                                                            Name on card is required
-                                                                        </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <label for="cc-name" class="form-label">Select Shift</label>
+                                                                        <select class="form-control" name="shift_id">
+                                                                            <option selected disabled>Choose Shift...</option>
+                                                                            <option value="1011">All Day</option>
+                                                                            <option value="1011">Morning Shift</option>
+                                                                            <option value="1011">Evening Shift</option>
+                                                                        </select>
                                                                     </div>
 
                                                                     <div class="col-md-6">
-                                                                        <label for="cc-number" class="form-label">Credit card number</label>
-                                                                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                                                                        <div class="invalid-feedback">
-                                                                            Credit card number is required
-                                                                        </div>
+                                                                        <label for="cc-name" class="form-label">Select Room Number</label>
+                                                                        <select class="form-control" name="rood_id">
+                                                                            <option selected disabled>Choose Room No...</option>
+                                                                            <option value="1011">1011</option>
+                                                                            <option value="1011">1012</option>
+                                                                            <option value="1011">2045</option>
+                                                                            <option value="1011">2036</option>
+                                                                            <option value="1011">5896</option>
+                                                                        </select>
                                                                     </div>
 
-                                                                    <div class="col-md-3">
-                                                                        <label for="cc-expiration" class="form-label">Expiration</label>
-                                                                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                                                    <div class="col-md-4">
+                                                                        <label class="form-label">Start Time</label>
+                                                                        <input type="text" class="form-control flatpickr-input" data-provider="timepickr" data-time-inline="11:42" readonly="readonly">
+                                                                        <div class="flatpickr-calendar hasTime noCalendar animate inline" tabindex="-1">
+                                                                        <div class="flatpickr-time" tabindex="-1"><div class="numInputWrapper">
+                                                                            <input class="numInput flatpickr-hour" type="number" aria-label="Hour" tabindex="-1" step="1" min="1" max="12" maxlength="2">
+                                                                            <span class="arrowUp"></span><span class="arrowDown"></span></div><span class="flatpickr-time-separator">:</span>
+                                                                            <div class="numInputWrapper"><input class="numInput flatpickr-minute" type="number" aria-label="Minute" tabindex="-1" step="5" min="0" max="59" maxlength="2"><span class="arrowUp"></span><span class="arrowDown"></span></div><span class="flatpickr-am-pm" title="Click to toggle" tabindex="-1">AM</span></div></div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <label class="form-label">End Time</label>
+                                                                            <input type="text" class="form-control flatpickr-input" data-provider="timepickr" data-time-inline="11:42" readonly="readonly">
+                                                                            <div class="flatpickr-calendar hasTime noCalendar animate inline" tabindex="-1">
+                                                                                <div class="flatpickr-time" tabindex="-1">
+                                                                                    <div class="numInputWrapper">
+                                                                                        <input class="numInput flatpickr-hour" type="number" aria-label="Hour" tabindex="-1" step="1" min="1" max="12" maxlength="2">
+                                                                                        <span class="arrowUp"></span><span class="arrowDown"></span>
+                                                                                    </div><span class="flatpickr-time-separator">:</span>
+                                                                                    <div class="numInputWrapper"><input class="numInput flatpickr-minute" type="number" aria-label="Minute" tabindex="-1" step="5" min="0" max="59" maxlength="2"><span class="arrowUp"></span><span class="arrowDown"></span></div><span class="flatpickr-am-pm" title="Click to toggle" tabindex="-1">AM</span>
+                                                                                </div>
+                                                                            </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-4">
+                                                                        <label for="cc-expiration" class="form-label">Per Patient Allocation <span class="badge badge-gradient-success">(Minute)</span> </label>
+                                                                        <input type="number" class="form-control" id="cc-expiration" placeholder="" required>
                                                                         <div class="invalid-feedback">
                                                                             Expiration date required
                                                                         </div>
                                                                     </div>
 
-                                                                    <div class="col-md-3">
-                                                                        <label for="cc-cvv" class="form-label">CVV</label>
-                                                                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                                                        <div class="invalid-feedback">
-                                                                            Security code required
-                                                                        </div>
+                                                                    <div class="col-md-12">
+                                                                        <center>
+                                                                            <button type="button" class="btn btn-outline-danger waves-effect waves-light">Generate Slot</button>
+                                                                        </center>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -367,3 +334,5 @@
         </div>
     </div>
 </div>
+
+<script src="~/js/pages/form-pickers.init.js"></script>
