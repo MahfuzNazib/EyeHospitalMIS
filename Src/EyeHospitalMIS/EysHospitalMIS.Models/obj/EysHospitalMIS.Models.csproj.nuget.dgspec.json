@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {}
+    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {}
   },
   "projects": {
-    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
+    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
+        "projectUniqueName": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
         "projectName": "EysHospitalMIS.Models",
-        "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
-        "packagesPath": "C:\\Users\\nazib\\.nuget\\packages\\",
-        "outputPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\obj\\",
+        "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
+        "packagesPath": "C:\\Users\\Nazib.m\\.nuget\\packages\\",
+        "outputPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\nazib\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nazib.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

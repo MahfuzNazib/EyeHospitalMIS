@@ -2,6 +2,7 @@
     ViewData["Title"] = "Department";
 }
 
+<div id="PlaceHolderHere"></div>
 <div class="main-content">
     <div class="page-content">
         <div class="container-fluid">
@@ -31,7 +32,6 @@
                                                     </div>
                                                 </div>
 
-                                                <div id="PlaceHolderHere"></div>
 
                                                 <!-- Add New Department -->
                                                 <div class="col-auto">
@@ -39,7 +39,7 @@
                                                             class="btn btn-soft-primary" 
                                                             data-bs-toggle="ajax-modal"
                                                             data-bs-target="#addDepartment" 
-                                                            data-bs-url="@Url.Action("AddDepartment")">
+                                                            data-url="@Url.Action("AddDepartment")">
                                                         <i class="ri-add-circle-line align-middle me-1"></i>
                                                         Add Department
                                                     </button>
@@ -707,7 +707,7 @@
                                                     <h6 class="mb-0 text-muted">408</h6>
                                                 </div>
                                             </div>
-                                        </div><!-- end row -->
+                                        </div>
                                     </div>
                                 </div>
 
@@ -727,19 +727,16 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-                        </div> <!-- end card-->
-                    </div> <!-- end .rightbar-->
-
-                </div> <!-- end col -->
+                        </div>
+                    </div>
+                </div> 
             </div>
-
         </div>
-        <!-- container-fluid -->
-
-
-        <!-- Default Modals -->
     <div>
-    <!-- End Page-content -->
 </div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+}
+
