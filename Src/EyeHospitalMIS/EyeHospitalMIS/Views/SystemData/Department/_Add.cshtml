@@ -1,43 +1,53 @@
-﻿<div id="addDepartment" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+﻿@{
+    ViewData["Title"] = "Add New Department";
+}
+@model EysHospitalMIS.Models.SystemData.Department
+
+<div id="addDepartment" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
         <div class="modal-content">
 
-            <div class="modal-header">
-                <h5 class="modal-title" id="myModalLabel">Add New Department</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
-                <hr />
-            </div>
-
-            <div class="modal-body">
-                <div class="row mb-2">
-                    <div class="col-md-4">Department Name</div>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" name="departmentName" />
-                    </div>
+            <form method="post" asp-controller="Department" asp-action="CreateDepartment">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Add New Department</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                    <hr />
                 </div>
 
-                <div class="row mb-2">
-                    <div class="col-md-4">Short Name</div>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" name="departmentName" />
+                <div class="modal-body">
+                              
+                    <div class="row mb-2">
+                        <div class="col-md-4">Department Name</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" name="NAME" />
+                            <span class="text-danger" asp-validation-for="NAME"></span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row mb-2">
-                    <div class="col-md-4">Status</div>
-                    <div class="col-md-8">
-                        <select class="form-control" name="status">
-                            <option >Select Status</option>
-                            <option value="1" selected>Active</option>
-                            <option value="0">Inctive</option>
-                        </select>
+                    <div class="row mb-2">
+                        <div class="col-md-4">Short Name</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" name="SHORT_NAME" />
+                            <span class="text-danger" asp-asp-validation-for="SHORT_NAME"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">Status</div>
+                        <div class="col-md-8">
+                            <select class="form-control" name="STATUS">
+                                <option >Select Status</option>
+                                <option value="1" selected>Active</option>
+                                <option value="0">Inctive</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary ">Save Department</button>
-            </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary ">Save Department</button>
+                </div>
+            </form>
 
         </div>
     </div>

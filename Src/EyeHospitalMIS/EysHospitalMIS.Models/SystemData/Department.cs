@@ -18,6 +18,8 @@ namespace EysHospitalMIS.Models.SystemData
         [Required]
         public string SHORT_NAME { get; set; } = "";
 
+        public string DEPARTMENT_ICON { get; set; }
+
         public int STATUS { get; set; } = 1; // By Default STATUS is 1. That Means Its Active.
     }
 }

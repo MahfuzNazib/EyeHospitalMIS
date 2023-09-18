@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj": {}
+    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj": {}
   },
   "projects": {
-    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj": {
+    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
+        "projectUniqueName": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
         "projectName": "EyeHospitalMIS",
-        "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
-        "packagesPath": "C:\\Users\\Nazib.m\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\obj\\",
+        "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\EyeHospitalMIS.csproj",
+        "packagesPath": "C:\\Users\\nazib\\.nuget\\packages\\",
+        "outputPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EyeHospitalMIS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nazib.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nazib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj": {
-                "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj"
+              "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj": {
+                "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj"
               },
-              "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj": {
-                "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj"
+              "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj": {
+                "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj"
               },
-              "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
-                "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj"
+              "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
+                "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj"
               }
             }
           }
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj": {
+    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj",
+        "projectUniqueName": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj",
         "projectName": "EysHospitalMIS.BLL",
-        "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj",
-        "packagesPath": "C:\\Users\\Nazib.m\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\obj\\",
+        "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\EysHospitalMIS.BLL.csproj",
+        "packagesPath": "C:\\Users\\nazib\\.nuget\\packages\\",
+        "outputPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nazib.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nazib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,11 +106,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj": {
-                "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj"
+              "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj": {
+                "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj"
               },
-              "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
-                "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj"
+              "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
+                "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj"
               }
             }
           }
@@ -150,21 +150,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj": {
+    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj",
+        "projectUniqueName": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj",
         "projectName": "EysHospitalMIS.DAL",
-        "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj",
-        "packagesPath": "C:\\Users\\Nazib.m\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\obj\\",
+        "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\EysHospitalMIS.DAL.csproj",
+        "packagesPath": "C:\\Users\\nazib\\.nuget\\packages\\",
+        "outputPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nazib.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nazib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -177,7 +177,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
+                "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -215,21 +219,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
+    "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
+        "projectUniqueName": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
         "projectName": "EysHospitalMIS.Models",
-        "projectPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
-        "packagesPath": "C:\\Users\\Nazib.m\\.nuget\\packages\\",
-        "outputPath": "E:\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\obj\\",
+        "projectPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\EysHospitalMIS.Models.csproj",
+        "packagesPath": "C:\\Users\\nazib\\.nuget\\packages\\",
+        "outputPath": "E:\\Software's\\ASP.NET\\EyeHospitalMIS\\Src\\EyeHospitalMIS\\EysHospitalMIS.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nazib.m\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nazib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -280,7 +284,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
