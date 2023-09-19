@@ -18,6 +18,14 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
 
         public IActionResult Index()
         {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                
+            }
             return View(departmentViewPath + "Index.cshtml");
         }
 
@@ -31,10 +39,10 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
         {
             try
             {
-                if(!ModelState.IsValid)
-                {
-                    return PartialView(departmentViewPath + "_Add.cshtml", department);
-                }
+                //if(!ModelState.IsValid)
+                //{
+                //    return PartialView(departmentViewPath + "_Add.cshtml", department);
+                //}
 
                 departmentManager.CreateDepartment(department);
                 return RedirectToAction("Index");
