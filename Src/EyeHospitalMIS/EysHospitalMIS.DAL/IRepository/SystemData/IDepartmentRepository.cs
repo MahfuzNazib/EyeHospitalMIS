@@ -1,4 +1,5 @@
-﻿using EysHospitalMIS.Models.SystemData;
+﻿using EysHospitalMIS.Models.DTO;
+using EysHospitalMIS.Models.SystemData;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace EysHospitalMIS.DAL.IRepository.SystemData
 {
     public interface IDepartmentRepository
     {
+        public DataBindModel GetAllDepartment(int Page = 1, int PerPage = 10);
         public void CreateDepartment(Department department);
     }
 }
