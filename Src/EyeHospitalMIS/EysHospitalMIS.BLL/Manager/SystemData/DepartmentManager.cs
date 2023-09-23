@@ -1,4 +1,5 @@
 ﻿using EysHospitalMIS.BLL.IManager.SystemData;
+using EysHospitalMIS.DAL.IRepository.SystemData;
 using EysHospitalMIS.Models.SystemData;
 using System;
 using System.Collections.Generic;
@@ -10,18 +11,22 @@ namespace EysHospitalMIS.BLL.Manager.SystemData
 {
     public class DepartmentManager : IDepartmentManager
     {
-        private readonly IDepartmentManager iDepartmentManager;
+        private readonly IDepartmentRepository iDepartmentRepository;
 
-        public void CreateNewDepartment(Department department)
+        public DepartmentManager(IDepartmentRepository iDepartmentRepository)
         {
+            this.iDepartmentRepository = iDepartmentRepository;
+        }
 
+        public void CreateDepartment(Department department)
+        {
             try
             {
-                iDepartmentManager.CreateNewDepartment(department);
+                iDepartmentRepository.CreateDepartment(department);
             }
             catch (Exception ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
 
         }

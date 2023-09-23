@@ -1,3 +1,9 @@
+using EysHospitalMIS.BLL.IManager.SystemData;
+using EysHospitalMIS.BLL.Manager.SystemData;
+using EysHospitalMIS.DAL.Data;
+using EysHospitalMIS.DAL.IRepository.SystemData;
+using EysHospitalMIS.DAL.Repository.SystemData;
+
 namespace EyeHospitalMIS
 {
     public class Program
@@ -8,6 +14,10 @@ namespace EyeHospitalMIS
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<IDbContext, DbContext>();
+
+            builder.Services.AddScoped<IDepartmentManager, DepartmentManager>();
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
             var app = builder.Build();
 

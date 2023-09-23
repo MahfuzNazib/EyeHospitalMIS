@@ -9,6 +9,6 @@ namespace EysHospitalMIS.BLL.IManager.SystemData
 {
     public interface IDepartmentManager
     {
-        public void CreateNewDepartment(Department department);
+        public void CreateDepartment(Department department);  
     }
 }
