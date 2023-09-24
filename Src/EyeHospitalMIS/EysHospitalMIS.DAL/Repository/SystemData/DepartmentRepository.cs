@@ -25,6 +25,8 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
             DataBindModel responseModel = new DataBindModel();
 
             string query = "EXEC SP_SD_DEPARTMENT_LIST";
+
+
         }
 
         public void CreateDepartment(Department department)
