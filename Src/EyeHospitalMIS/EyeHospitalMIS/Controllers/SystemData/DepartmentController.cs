@@ -20,7 +20,7 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
         {
             try
             {
-
+                Console.WriteLine("This is Console Test");
             }
             catch (Exception ex)
             {

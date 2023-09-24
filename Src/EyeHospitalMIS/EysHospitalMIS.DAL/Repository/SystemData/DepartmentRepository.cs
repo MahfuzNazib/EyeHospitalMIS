@@ -27,6 +27,7 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
             string query = "EXEC SP_SD_DEPARTMENT_LIST";
 
 
+            return responseModel;
         }
 
         public void CreateDepartment(Department department)
