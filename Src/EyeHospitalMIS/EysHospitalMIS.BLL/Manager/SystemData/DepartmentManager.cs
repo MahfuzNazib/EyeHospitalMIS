@@ -1,5 +1,6 @@
 ﻿using EysHospitalMIS.BLL.IManager.SystemData;
 using EysHospitalMIS.DAL.IRepository.SystemData;
+using EysHospitalMIS.Models.DTO;
 using EysHospitalMIS.Models.SystemData;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,32 @@ namespace EysHospitalMIS.BLL.Manager.SystemData
                 Console.WriteLine(ex.Message);
             }
 
+        }
+
+        public async Task<DataBindModel> GetAllDepartment(int Page = 1, int PerPage = 10)
+        {
+            try
+            {
+                return await iDepartmentRepository.GetAllDepartment(Page, PerPage);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
+        }
+
+        public DataBindModel GetAllDepartmentList(int Page = 1, int PerPage = 10)
+        {
+            try
+            {
+                return iDepartmentRepository.GetAllDepartmentList(Page, PerPage);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                return null;
+            }
         }
     }
 }

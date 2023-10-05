@@ -1,6 +1,8 @@
 ﻿using EysHospitalMIS.BLL.IManager.SystemData;
+using EysHospitalMIS.Models.DTO;
 using EysHospitalMIS.Models.SystemData;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 
 namespace EyeHospitalMIS.Controllers.SystemInfo
 {
@@ -16,17 +18,33 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
             this.departmentManager = departmentManager;
         }
 
-        public IActionResult Index()
+        //public async Task<IActionResult> Index(int Page = 1, int PerPage = 10)
+        //{
+        //    try
+        //    {
+        //        DataBindModel response = await departmentManager.GetAllDepartment(Page, PerPage);
+        //        return View(departmentViewPath + "Index.cshtml", response);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        logger.LogError(ex.Message.ToString());
+        //        return View();
+        //    }
+        //}
+
+        public IActionResult Index(int Page = 1, int PerPage = 10)
         {
             try
             {
-                Console.WriteLine("This is Console Test");
+                DataBindModel response = new DataBindModel();
+                response = departmentManager.GetAllDepartmentList(Page, PerPage);
+
+                return View(departmentViewPath + "Index.cshtml", response);
             }
             catch (Exception ex)
             {
-                
+                return View();
             }
-            return View(departmentViewPath + "Index.cshtml");
         }
 
         public IActionResult AddDepartment()

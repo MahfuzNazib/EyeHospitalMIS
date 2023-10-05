@@ -1,26 +1,44 @@
-<mxfile host="Electron" modified="2023-09-19T16:40:42.608Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="K-oZr8DUjxVGqtW-aNhl" version="21.7.5" type="device">
+<mxfile host="Electron" modified="2023-10-04T06:21:01.986Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="zbB-VmvFenKYYNXHuyLg" version="21.7.5" type="device">
   <diagram name="Page-1" id="WirfSdKMwHIBQMpA1WTf">
-    <mxGraphModel dx="1287" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1727" dy="1010" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="9XKF0GM-w9WCjBuBjqWl-1" value="HSM_SD_DEPARTMENTS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9XKF0GM-w9WCjBuBjqWl-1" value="HSM_SD_DEPARTMENTS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="140" y="120" width="180" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="9XKF0GM-w9WCjBuBjqWl-2" value="ID&lt;br&gt;NAME&lt;br&gt;SHORT_NAME&lt;br&gt;DEPARTMENT_ICON&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9XKF0GM-w9WCjBuBjqWl-1">
+        <mxCell id="9XKF0GM-w9WCjBuBjqWl-2" value="ID&lt;br&gt;NAME&lt;br&gt;SHORT_NAME&lt;br&gt;DEPARTMENT_ICON&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="9XKF0GM-w9WCjBuBjqWl-1" vertex="1">
           <mxGeometry y="50" width="180" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="9XKF0GM-w9WCjBuBjqWl-3" value="HSM_SD_BLOOD_GROUPS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9XKF0GM-w9WCjBuBjqWl-3" value="HSM_SD_BLOOD_GROUPS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="351" y="120" width="190" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="9XKF0GM-w9WCjBuBjqWl-4" value="ID&lt;br&gt;NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9XKF0GM-w9WCjBuBjqWl-3">
+        <mxCell id="9XKF0GM-w9WCjBuBjqWl-4" value="ID&lt;br&gt;NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="9XKF0GM-w9WCjBuBjqWl-3" vertex="1">
           <mxGeometry y="50" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="9XKF0GM-w9WCjBuBjqWl-5" value="HSM_SD_DESIGNATIONS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="9XKF0GM-w9WCjBuBjqWl-5" value="HSM_SD_DESIGNATIONS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="580" y="120" width="190" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="9XKF0GM-w9WCjBuBjqWl-6" value="ID&lt;br&gt;NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="9XKF0GM-w9WCjBuBjqWl-5">
+        <mxCell id="9XKF0GM-w9WCjBuBjqWl-6" value="ID&lt;br&gt;NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="9XKF0GM-w9WCjBuBjqWl-5" vertex="1">
           <mxGeometry y="50" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="08kGy8C91BimhT3kLR0z-1" value="HSM_SD_BRANCHES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="300" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="08kGy8C91BimhT3kLR0z-2" value="ID&lt;br&gt;CODE&lt;br&gt;NAME&lt;br&gt;LOCATION&lt;br&gt;STATUS&lt;br&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="08kGy8C91BimhT3kLR0z-1">
+          <mxGeometry y="50" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="08kGy8C91BimhT3kLR0z-3" value="HSM_SD_" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="300" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="08kGy8C91BimhT3kLR0z-4" value="ID&lt;br&gt;CODE&lt;br&gt;NAME&lt;br&gt;LOCATION&lt;br&gt;STATUS&lt;br&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="08kGy8C91BimhT3kLR0z-3">
+          <mxGeometry y="50" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="08kGy8C91BimhT3kLR0z-5" value="HSM_SD_ROOM_TYPES" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="120" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="08kGy8C91BimhT3kLR0z-6" value="ID&lt;br&gt;NAME&lt;br&gt;SHORT_NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="08kGy8C91BimhT3kLR0z-5">
+          <mxGeometry y="50" width="190" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
