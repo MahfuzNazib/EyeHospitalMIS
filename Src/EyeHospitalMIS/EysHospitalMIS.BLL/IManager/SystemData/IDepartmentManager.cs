@@ -11,7 +11,6 @@ namespace EysHospitalMIS.BLL.IManager.SystemData
     public interface IDepartmentManager
     {
         public void CreateDepartment(Department department);
-        public Task<DataBindModel> GetAllDepartment(int Page = 1, int PerPage = 10);
         public DataBindModel GetAllDepartmentList(int Page = 1, int PerPage = 10);
     }
 }

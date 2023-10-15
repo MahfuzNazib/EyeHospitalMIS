@@ -32,19 +32,6 @@ namespace EysHospitalMIS.BLL.Manager.SystemData
 
         }
 
-        public async Task<DataBindModel> GetAllDepartment(int Page = 1, int PerPage = 10)
-        {
-            try
-            {
-                return await iDepartmentRepository.GetAllDepartment(Page, PerPage);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                return null;
-            }
-        }
-
         public DataBindModel GetAllDepartmentList(int Page = 1, int PerPage = 10)
         {
             try

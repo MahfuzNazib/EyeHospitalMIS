@@ -13,13 +13,12 @@ namespace EysHospitalMIS.Models.SystemData
         public int ID { get; set; }
 
         [Required(ErrorMessage = "Department Name Can't be Empty")]
-        public string NAME { get; set; }
+        public string? NAME { get; set; }
 
         [Required(ErrorMessage = "Department Short Name Can't be Empty")]
-        public string SHORT_NAME { get; set; }
-
-        public string DEPARTMENT_ICON { get; set; }
-
+        public string? SHORT_NAME { get; set; }
+        public string? DEPARTMENT_ICON { get; set; }
         public int STATUS { get; set; } // By Default STATUS is 1. That Means Its Active.
+        public int TOTAL_COUNT { get; set; }
     }
 }

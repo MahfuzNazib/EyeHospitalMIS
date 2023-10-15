@@ -46,41 +46,7 @@ namespace EysHospitalMIS.DAL.Data
             }
         }
 
-
-        // Get Data List from DB
-        public async Task<DbDataReader> ExecuteReaderAsync(string query, List<param>? @params = null)
-        {
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                await connection.OpenAsync();
-                using (SqlCommand command = new SqlCommand(query,connection))
-                {
-                    
-                    if (@params != null)
-                    {
-                        foreach (param param in @params)
-                        {
-                            if (param.SqlDbType == SqlDbType.Structured)
-                            {
-                                command.Parameters.Add(param.ParamName, param.SqlDbType).Value = param.SqlValue;
-                                continue;
-                            }
-
-                            if (String.IsNullOrEmpty(Convert.ToString(param.SqlValue)))
-                            {
-                                param.SqlValue = DBNull.Value;
-                            }
-                            command.Parameters.Add(param.ParamName, param.SqlDbType).Value = param.SqlValue;
-                        }
-                    }
-
-                    return await command.ExecuteReaderAsync();
-
-                }
-            }
-        }
-
-        public DbDataReader ExecuteReader(string query, List<param>? @params = null)
+        public DataTable GetDataTable(string query, List<param>? @params = null)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -104,10 +70,28 @@ namespace EysHospitalMIS.DAL.Data
                             command.Parameters.Add(param.ParamName, param.SqlDbType).Value = param.SqlValue;
                         }
                     }
-                    return command.ExecuteReader();
+
+                    DataTable data = new DataTable();
+                    data.Load(command.ExecuteReader());
+
+                    return data;
                 }
             }
         }
 
+        public PageSummary PaginationSummary(int totalCount, int perPage, int page)
+        {
+            decimal lastPage = (decimal)totalCount / perPage;
+
+            PageSummary pageSummary = new()
+            {
+                Page = page,
+                PerPage = perPage,
+                FirstPage = 1,
+                LastPage = (int)Math.Ceiling(lastPage)
+            };
+
+            return pageSummary;
+        }
     }
 }
