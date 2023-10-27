@@ -1,0 +1,73 @@
+﻿@using EysHospitalMIS.Models.DTO
+@model DataBindModel
+
+<div class="row">
+    <!-- Show Item Information -->
+    <div class="col-md-6">
+        <div class="alert alert-primary alert-top-border alert-dismissible fade show" role="alert" style="height:68%">
+            @{
+                int endNumber = Model.pageSummary.Page * Model.pageSummary.PerPage;
+                int startNumber = endNumber - (Model.pageSummary.PerPage - 1);
+
+                if(Model.pageSummary.Page == Model.pageSummary.LastPage)
+                {
+                    int previousRecord = (Model.pageSummary.PerPage * (Model.pageSummary.LastPage - 1));
+                    startNumber = endNumber - previousRecord;
+                }
+            }
+            Showing (@startNumber to @endNumber) of @Model.pageSummary.TotalNumberOfRecord
+        </div>
+    </div>
+
+    <!-- Show Pagination Information -->
+    <div class="col-md-6">
+        <div class="alert alert-primary alert-top-border alert-dismissible fade show" role="alert" style="height:68%">
+            <div class="col-md-6">
+                <div class="dataTables_paginate paging_full_numbers" id="alternative-pagination_paginate">
+                    <ul class="pagination">
+                        <li class="paginate_button page-item first" d="alternative-pagination_first">
+                            <a href="@Url.Action("Index", new { page = 1, per_page = Model.pageSummary.PerPage })"
+                               aria-controls="alternative-pagination" data-dt-idx="0" tabindex="0" class="page-link">First</a>
+                        </li>
+                        
+                        @{
+                            int startPage = 1;
+                            int endPage = Model.pageSummary.LastPage;
+                            int currentPage = Model.pageSummary.Page;
+
+                            if(currentPage != startPage)
+                            {
+                                startPage = currentPage - 2;
+
+                                if(startPage <= 0)
+                                {
+                                    currentPage = startPage;
+                                }
+                            }
+
+                            endPage = currentPage + 2;
+                            if(Model.pageSummary.LastPage < endPage)
+                            {
+                                endPage = Model.pageSummary.LastPage;
+                            }
+
+                            for (int i = startPage; i <= endPage; i++)
+                            {
+                                <li class="paginate_button page-item @(i == Model.pageSummary.CurrentPage ? "active" : "")">
+                                    <a href="@Url.Action("Index", new { page = i, per_page = Model.pageSummary.PerPage })"
+                                   aria-controls="alternative-pagination" data-dt-idx="2" tabindex="0" class="page-link">@i</a>
+                                </li>
+                            }
+                        }
+                        
+
+                        <li class="paginate_button page-item first" d="alternative-pagination_first">
+                            <a href="@Url.Action("Index", new { page = Model.pageSummary.LastPage, per_page = Model.pageSummary.PerPage })"
+                               aria-controls="alternative-pagination" data-dt-idx="0" tabindex="0" class="page-link">Last</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

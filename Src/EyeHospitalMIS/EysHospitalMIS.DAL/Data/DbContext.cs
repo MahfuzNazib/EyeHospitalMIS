@@ -88,7 +88,8 @@ namespace EysHospitalMIS.DAL.Data
                 Page = page,
                 PerPage = perPage,
                 FirstPage = 1,
-                LastPage = (int)Math.Ceiling(lastPage)
+                LastPage = (int)Math.Ceiling(lastPage),
+                TotalNumberOfRecord = totalCount
             };
 
             return pageSummary;

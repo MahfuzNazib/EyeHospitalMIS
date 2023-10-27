@@ -24,11 +24,11 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
             try
             {
                 DataBindModel response = departmentManager.GetAllDepartmentList(Page, PerPage);
-
                 return View(departmentViewPath + "Index.cshtml", response);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                logger.LogError(ex.Message);
                 return View();
             }
         }
@@ -43,17 +43,19 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
         {
             try
             {
-                //if(!ModelState.IsValid)
-                //{
-                //    return PartialView(departmentViewPath + "_Add.cshtml", department);
-                //}
+                if (!ModelState.IsValid)
+                {
+                    return PartialView(departmentViewPath + "_Add.cshtml", department);
+                }
 
                 departmentManager.CreateDepartment(department);
+                var (responseStatus, responseMessage, responseType) = SystemHelper.FormDataSubmitResponse(TempData, "Success", "Department Successfully Created", "success");
                 return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
-                return View();
+                logger.LogError(ex.Message);
+                return PartialView(departmentViewPath + "_Add.cshtml", department);
             }
         }
     }

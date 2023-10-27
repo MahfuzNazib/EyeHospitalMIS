@@ -22,7 +22,7 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
             _dbContext = dbContext;
         }
 
-        public DataBindModel GetAllDepartmentList(int page = 1, int perPage = 10)
+        public DataBindModel GetAllDepartmentList(int Page = 1, int PerPage = 10)
         {
             DataBindModel responseModel = new DataBindModel();
             List<Department> departments = new List<Department>();
@@ -32,14 +32,15 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
             List<param> parameters = new List<param>();
             parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@SEARCH_PARAM", SqlValue = null });
             parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@SORT_EXPRESSION", SqlValue = "ID ASC" });
-            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@START_INDEX", SqlValue = page });
-            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@ROW_COUNT", SqlValue = perPage });
+            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@START_INDEX", SqlValue = Page });
+            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@ROW_COUNT", SqlValue = PerPage });
 
             DataTable departmentData = _dbContext.GetDataTable(query, parameters);
 
             foreach(DataRow row in departmentData.Rows)
             {
                 Department department = new Department();
+                department.ID = Convert.ToInt32(row["ID"].ToString());
                 department.NAME = row["NAME"].ToString();
                 department.SHORT_NAME = row["SHORT_NAME"].ToString();
                 department.DEPARTMENT_ICON = row["DEPARTMENT_ICON"].ToString();
@@ -50,7 +51,7 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
 
             int totalCount = departments.FirstOrDefault()?.TOTAL_COUNT ?? 0;
             responseModel.data = departments;
-            responseModel.pageSummary = _dbContext.PaginationSummary(totalCount, perPage, page);
+            responseModel.pageSummary = _dbContext.PaginationSummary(totalCount, PerPage, Page);
 
             return responseModel;
         }
