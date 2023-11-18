@@ -12,5 +12,8 @@ namespace EysHospitalMIS.BLL.IManager.SystemData
     {
         public void CreateDepartment(Department department);
         public DataBindModel GetAllDepartmentList(int Page = 1, int PerPage = 10);
+        public Department GetDepartmentById(int id);
+        public void UpdateDepartment(Department department);
+        public void DeleteDepartment(int id);
     }
 }

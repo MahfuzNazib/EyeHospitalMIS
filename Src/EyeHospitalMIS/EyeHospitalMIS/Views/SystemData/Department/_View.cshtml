@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "View Department Info";
+}
+@model EysHospitalMIS.Models.SystemData.Department
+
+<div id="viewDepartment" class="modal fade" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <form method="post" asp-controller="Department" asp-action="UpdateDepartment">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">Department Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> </button>
+                    <hr />
+                </div>
+
+                <div class="modal-body">
+                    <input type="hidden" name="ID" value="@Model.ID" />
+                    <div class="row mb-2">
+                        <div class="col-md-4">Department Name </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" name="NAME" value="@(Model.NAME != null ? Model.NAME : "")" />
+                            <span class="text-danger" asp-validation-for="NAME"></span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">Short Name</div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" name="SHORT_NAME" value="@Model.SHORT_NAME" />
+                            <span class="text-danger" asp-validation-for="SHORT_NAME"></span>
+                        </div>
+                    </div>
+                    @{
+                        var activeSelected = Model.STATUS == 1 ? "selected" : "";
+                        var inactiveSelected = Model.STATUS == 0 ? "selected" : "";
+                    }
+                    <div class="row mb-2">
+                        <div class="col-md-4">Status</div>
+                        <div class="col-md-8">
+                            <select class="form-control" name="STATUS">
+                                <option>Select Status</option>
+                                <option value="1" selected="@(Model.STATUS == 1)">Active</option>
+                                <option value="0" selected="@(Model.STATUS == 0)">Inctive</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary ">Update</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+

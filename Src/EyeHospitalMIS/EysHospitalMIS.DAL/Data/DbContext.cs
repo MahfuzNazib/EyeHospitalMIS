@@ -13,7 +13,7 @@ namespace EysHospitalMIS.DAL.Data
 {
     public class DbContext : IDbContext
     {
-        string connectionString;
+        readonly string connectionString;
 
         public DbContext(IConfiguration configuration) 
         {
@@ -93,6 +93,46 @@ namespace EysHospitalMIS.DAL.Data
             };
 
             return pageSummary;
+        }
+
+
+        public DataSet GetDataSet(string query, List<param>? @params = null)
+        {
+            DataSet dataSet = new DataSet();
+            
+            using(var connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using(var command = new SqlCommand(query, connection))
+                {
+                    if(@params!= null)
+                    {
+                        foreach (param param in @params)
+                        {
+                            if (param.SqlDbType == SqlDbType.Structured)
+                            {
+                                command.Parameters.Add(param.ParamName, param.SqlDbType).Value = param.SqlValue;
+                                continue;
+                            }
+
+                            if (String.IsNullOrEmpty(Convert.ToString(param.SqlValue)))
+                            {
+                                param.SqlValue = DBNull.Value;
+                            }
+                            command.Parameters.Add(param.ParamName, param.SqlDbType).Value = param.SqlValue;
+                        }
+
+                        using (var adapter = new SqlDataAdapter(command))
+                        {
+                            adapter.Fill(dataSet);
+                        }
+
+                        return dataSet;
+                    }
+                }
+            }
+
+            return null;
         }
     }
 }

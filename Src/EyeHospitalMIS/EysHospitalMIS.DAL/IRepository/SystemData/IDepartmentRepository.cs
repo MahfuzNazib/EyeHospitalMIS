@@ -12,5 +12,8 @@ namespace EysHospitalMIS.DAL.IRepository.SystemData
     {
         public DataBindModel GetAllDepartmentList(int Page = 1, int PerPage = 10);
         public void CreateDepartment(Department department);
+        public Department GetDepartmentById(int id);
+        public void UpdateDepartment(Department department);
+        public void DeleteDepartment(int id);
     }
 }

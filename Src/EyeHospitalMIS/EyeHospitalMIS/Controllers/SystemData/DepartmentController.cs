@@ -49,13 +49,66 @@ namespace EyeHospitalMIS.Controllers.SystemInfo
                 }
 
                 departmentManager.CreateDepartment(department);
-                var (responseStatus, responseMessage, responseType) = SystemHelper.FormDataSubmitResponse(TempData, "Success", "Department Successfully Created", "success");
+                //var (responseStatus, responseMessage, responseType) = SystemHelper.FormDataSubmitResponse(TempData, "success", "Department Successfully Created", "Success");
+                TempData["responseStatus"] = "success";
+                TempData["responseMessage"] = "Department Added Successfully";
+                TempData["responseType"] = "Success";
+
                 return RedirectToAction("Index");
             }
             catch (Exception ex)
             {
                 logger.LogError(ex.Message);
                 return PartialView(departmentViewPath + "_Add.cshtml", department);
+            }
+        }
+
+
+        public IActionResult GetDepartmentById(int Id)
+        {
+            try
+            {
+                Department department = departmentManager.GetDepartmentById(Id);
+                return PartialView(departmentViewPath + "_View.cshtml", department);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.Message);
+                return View();
+            }
+        }
+
+        [HttpPost]
+        public IActionResult UpdateDepartment(Department department)
+        {
+            try
+            {
+                departmentManager.UpdateDepartment(department);
+                //var (responseStatus, responseMessage, responseType) = SystemHelper.FormDataSubmitResponse(TempData, "success", "Department Successfully Created", "Success");
+                TempData["responseStatus"] = "success";
+                TempData["responseMessage"] = "Department Updated Successfully";
+                TempData["responseType"] = "Success";
+
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.Message);
+                return View();
+            }
+        }
+
+        public IActionResult DeleteDepartment(int Id)
+        {
+            try
+            {
+                departmentManager.DeleteDepartment(Id);
+                return RedirectToAction("Index");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex.Message);
+                return View();
             }
         }
     }

@@ -11,6 +11,7 @@ namespace EysHospitalMIS.Models.DTO
     {
         public dynamic data { get; set; }
         public PageSummary pageSummary { get; set; }
+        public FormDataResponse formDataResponse { get; set; }
 
         public static implicit operator SqlDataReader(DataBindModel v)
         {

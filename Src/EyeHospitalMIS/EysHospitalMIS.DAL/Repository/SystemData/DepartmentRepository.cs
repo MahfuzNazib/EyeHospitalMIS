@@ -31,7 +31,7 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
 
             List<param> parameters = new List<param>();
             parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@SEARCH_PARAM", SqlValue = null });
-            parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@SORT_EXPRESSION", SqlValue = "ID ASC" });
+            parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@SORT_EXPRESSION", SqlValue = "ID DESC" });
             parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@START_INDEX", SqlValue = Page });
             parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@ROW_COUNT", SqlValue = PerPage });
 
@@ -68,6 +68,53 @@ namespace EysHospitalMIS.DAL.Repository.SystemData
             parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@STATUS", SqlValue = department.STATUS });
 
             _dbContext.ExecuteQuery(query, parameters);
+        }
+
+        public Department GetDepartmentById(int id)
+        {
+            Department department = new Department();
+            string query = @"EXEC SP_SD_DEPARTMENT_GET_BY_ID @ID";
+
+            List<param> parameters = new List<param>();
+            parameters.Add(new param { SqlDbType=SqlDbType.Int, ParamName = "@ID", SqlValue = id});
+
+            DataSet departmentData = _dbContext.GetDataSet(query, parameters);
+
+            if(departmentData.Tables.Count > 0 && departmentData.Tables[0].Rows.Count > 0)
+            {
+                DataRow dataRow = departmentData.Tables[0].Rows[0];
+                department = new Department
+                {
+                    ID = Convert.ToInt32(dataRow["ID"]),
+                    NAME = dataRow["NAME"].ToString(),
+                    SHORT_NAME = dataRow["SHORT_NAME"].ToString(),
+                    DEPARTMENT_ICON = dataRow["DEPARTMENT_ICON"].ToString(),
+                    STATUS = Convert.ToInt32(dataRow["STATUS"])
+                };
+            }
+            return department;
+        }
+
+        public void UpdateDepartment(Department department)
+        {
+            string query = @"EXEC SP_SD_DEPARTMENT_UPDATE @ID, @NAME, @SHORT_NAME, @STATUS";
+
+            List<param> parameters = new List<param>();
+            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@ID", SqlValue = department.ID });
+            parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@NAME", SqlValue = department.NAME });
+            parameters.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@SHORT_NAME", SqlValue = department.SHORT_NAME });
+            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "STATUS", SqlValue = department.STATUS });
+
+            _dbContext.ExecuteQuery(query, parameters);
+        }
+
+        public void DeleteDepartment(int id)
+        {
+            string query = @"EXEC SP_SD_DEPARTMENT_DELETE @ID";
+
+            List<param> parameters = new List<param>();
+            parameters.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@ID", SqlValue = id });
+            _dbContext.ExecuteQuery(query,parameters);
         }
     }
 }

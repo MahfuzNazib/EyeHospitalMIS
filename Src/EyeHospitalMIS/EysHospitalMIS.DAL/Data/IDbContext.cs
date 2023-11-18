@@ -15,5 +15,6 @@ namespace EysHospitalMIS.DAL.Data
         public void ExecuteQuery(string query, List<param> @params);
         public DataTable GetDataTable(string query, List<param>? @params = null);
         public PageSummary PaginationSummary(int totalCount, int perPage, int Page);
+        public DataSet GetDataSet(string query, List<param>? @params = null);
     }
 }

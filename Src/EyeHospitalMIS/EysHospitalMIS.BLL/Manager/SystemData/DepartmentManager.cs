@@ -44,5 +44,27 @@ namespace EysHospitalMIS.BLL.Manager.SystemData
                 return null;
             }
         }
+
+        public Department GetDepartmentById(int id)
+        {
+            try
+            {
+                return iDepartmentRepository.GetDepartmentById(id);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+
+        public void UpdateDepartment(Department department)
+        {
+            iDepartmentRepository.UpdateDepartment(department);
+        }
+
+        public void DeleteDepartment(int id)
+        {
+            iDepartmentRepository.DeleteDepartment(id);
+        }
     }
 }

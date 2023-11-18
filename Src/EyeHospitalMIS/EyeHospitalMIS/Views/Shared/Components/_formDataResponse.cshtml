@@ -1,1 +1,27 @@
-﻿
+﻿@{
+    string responseMessage = TempData["responseMessage"] as string;
+    string responseType = TempData["responseType"] as string;
+    string responseStatus = TempData["responseStatus"] as string;
+}
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            const responseStatus = @Html.Raw(responseStatus);
+            const responseMessage = @Html.Raw(responseMessage);
+            const responseType = @Html.Raw(responseType);
+
+            Swal.fire({
+                title: `${ responseType }`,
+                text: `${ responseMessage }`,
+                icon: `${ responseStatus }`,
+                confirmButtonClass: "btn btn-primary w-xs mt-2",
+                buttonsStyling: !1,
+                showCloseButton: !0
+            })
+        });
+    </script>
+}
