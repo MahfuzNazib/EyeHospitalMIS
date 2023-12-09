@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Add New Branch";
+}
+
+<div id="PlaceHolderHere"></div>
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="h-100">
+
+                        <!-- Main Page Content Start -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title mb-0">Create New Branch</h4>
+                                    </div>
+                                    <div class="card-body" style="margin-top:-4%;">
+                                        <form action="#" class="form-steps" autocomplete="off">
+                                            <div class="text-center pb-4 mb-1">
+                                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                                            </div>
+                                            <!-- Navigation Part Start -->
+                                            <div class="step-arrow-nav mb-4">
+                                                <ul class="nav nav-pills custom-nav nav-justified" role="tablist">
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link done" id="steparrow-gen-info-tab" data-bs-toggle="pill" data-bs-target="#steparrow-gen-info" type="button" role="tab" aria-controls="steparrow-gen-info" aria-selected="true">Branch Information</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link active" id="steparrow-description-info-tab" data-bs-toggle="pill" data-bs-target="#steparrow-description-info" type="button" role="tab" aria-controls="steparrow-description-info" aria-selected="false">Data & DB Configuration</button>
+                                                    </li>
+                                                    <li class="nav-item" role="presentation">
+                                                        <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Preview</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- Navigation Part End -->
+
+                                            <!-- Tab Body Part Start -->
+                                            <div class="tab-content">
+                                                
+                                                @await Html.PartialAsync("CreatePartialViews/_generalInformation")
+
+                                                @await Html.PartialAsync("CreatePartialViews/_dataBaseDBConfiguration")
+
+                                                @await Html.PartialAsync("CreatePartialViews/_preview")
+
+                                            </div>
+                                            <!-- Tab Body Part End -->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Main Content End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

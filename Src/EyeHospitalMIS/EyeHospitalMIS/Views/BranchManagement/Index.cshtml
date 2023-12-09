@@ -1,0 +1,226 @@
+﻿@{
+    ViewData["Title"] = "All Branch List";
+}
+
+@{
+    string responseStatus = TempData["responseStatus"] as string;
+    string responseMessage = TempData["responseMessage"] as string;
+    string responseType = TempData["responseType"] as string;
+}
+
+<div id="PlaceHolderHere"></div>
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col">
+
+                    <div class="h-100">
+                        <div class="row mb-3 pb-1">
+                            <div class="col-12">
+                                <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                    <div class="flex-grow-1">
+                                        <h4 class="fs-16 mb-1">All Branch List</h4>
+                                        <p class="text-muted mb-0">
+                                            EyeSys all department list with report
+                                        </p>
+                                    </div>
+                                    <div class="mt-3 mt-lg-0">
+                                        <form action="javascript:void(0);">
+                                            <div class="row g-3 mb-0 align-items-center">
+                                                <div class="col-sm-auto">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control border dash-filter-picker" placeholder="Search Here...">
+                                                        <div class="input-group-text bg-primary border-primary text-white">
+                                                            <i class="ri-calendar-2-line"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <!-- Add New Department -->
+                                                <div class="col-auto">
+                                                    <button type="button"
+                                                            class="btn btn-soft-primary"
+                                                            data-bs-toggle="ajax-modal"
+                                                            data-bs-target="#addDepartment"
+                                                            data-url="@Url.Action("AddDepartment")">
+                                                        <i class="ri-add-circle-line align-middle me-1"></i>
+                                                        Add New Branch
+                                                    </button>
+                                                </div>
+                                                <!-- /Add New Department-->
+                                                <div class="col-auto">
+                                                    <button type="button" class="btn btn-soft-secondary btn-icon waves-effect waves-light layout-rightside-btn"><i class="ri-pulse-line"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Branch List Data Start -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row row-cols-xxl-4 row-cols-lg-2 row-cols-1">
+
+                                    <!-- Branch Card Start -->
+                                    <div class="card ribbon-box border ribbon-fill shadow-none right mb-lg-0" style="height:fit-content">
+                                        <div class="card-body">
+                                            <div class="ribbon ribbon-info">New</div>
+
+                                            <div class="d-flex mb-4 align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <img src="~/images/users/avatar-1.jpg" alt="" class="avatar-sm rounded-circle" />
+                                                </div>
+                                                <div class="flex-grow-1 ms-2">
+                                                    <h5 class="card-title mb-1">Uttara Branch - 01</h5>
+                                                    <span class="badge badge-gradient-success">Running</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxs-phone-call"></i> 01777127618</span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxl-gmail"></i> nazibmahfuz60@gmail.com</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 mt-2 mb-2">
+                                                    <a href="javascript:void(0)" class="btn btn-primary btn-sm w-100">More Details</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Branch Card End -->
+                                    <!-- Branch Card Start -->
+                                    <div class="card ribbon-box border ribbon-fill shadow-none right mb-lg-0" style="height:fit-content">
+                                        <div class="card-body">
+                                            <div class="ribbon ribbon-info">2-Y</div>
+
+                                            <div class="d-flex mb-4 align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <img src="~/images/users/avatar-1.jpg" alt="" class="avatar-sm rounded-circle" />
+                                                </div>
+                                                <div class="flex-grow-1 ms-2">
+                                                    <h5 class="card-title mb-1">Uttara Branch - 01</h5>
+                                                    <span class="badge badge-gradient-success">Running</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxs-phone-call"></i> 01777127618</span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxl-gmail"></i> nazibmahfuz60@gmail.com</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 mt-2 mb-2">
+                                                    <button type="button" class="btn btn-outline-success waves-effect waves-light btn-sm w-100">More Details</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Branch Card End -->
+                                    <!-- Branch Card Start -->
+                                    <div class="card ribbon-box border ribbon-fill shadow-none right mb-lg-0" style="height:fit-content">
+                                        <div class="card-body">
+                                            <div class="ribbon ribbon-info">11-M</div>
+
+                                            <div class="d-flex mb-4 align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <img src="~/images/users/avatar-1.jpg" alt="" class="avatar-sm rounded-circle" />
+                                                </div>
+                                                <div class="flex-grow-1 ms-2">
+                                                    <h5 class="card-title mb-1">Uttara Branch - 01</h5>
+                                                    <span class="badge badge-gradient-success">Running</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxs-phone-call"></i> 01777127618</span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxl-gmail"></i> nazibmahfuz60@gmail.com</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 mt-2 mb-2">
+                                                    <a href="javascript:void(0)" class="btn btn-primary btn-sm w-100">More Details</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Branch Card End -->
+                                    <!-- Branch Card Start -->
+                                    <div class="card ribbon-box border ribbon-fill shadow-none right mb-lg-0" style="height:fit-content">
+                                        <div class="card-body">
+                                            <div class="ribbon ribbon-info">3-M</div>
+
+                                            <div class="d-flex mb-4 align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <img src="~/images/users/avatar-1.jpg" alt="" class="avatar-sm rounded-circle" />
+                                                </div>
+                                                <div class="flex-grow-1 ms-2">
+                                                    <h5 class="card-title mb-1">Uttara Branch - 01</h5>
+                                                    <span class="badge badge-gradient-success">Running</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mt-2 mb-2">
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxs-phone-call"></i> 01777127618</span>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <span class="mb-1"><i class="bx bxl-gmail"></i> nazibmahfuz60@gmail.com</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12 mt-2 mb-2">
+                                                    <a href="javascript:void(0)" class="btn btn-primary btn-sm w-100">More Details</a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- Branch Card End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Branch List Data End -->
+                               
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+
+        @section Scripts {
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                var responseData = {
+                    responseStatus: "@Html.Raw(responseStatus)",
+                    responseMessage: "@Html.Raw(responseMessage)",
+                    responseType: "@Html.Raw(responseType)"
+                };
+            </script>
+            <script src="~/js/formResponse.js"></script>
+        }

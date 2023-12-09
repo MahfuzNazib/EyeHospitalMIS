@@ -1,4 +1,5 @@
 ﻿using EyeHospitalMIS.Models;
+using EysHospitalMIS.Models.ViewModel.SecurityManager;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -14,11 +15,6 @@ namespace EyeHospitalMIS.Controllers
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }

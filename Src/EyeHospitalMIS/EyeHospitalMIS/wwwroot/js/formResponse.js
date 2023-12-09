@@ -16,7 +16,6 @@
     }
 
     // Delete Confirmation Message
-    // Assuming you're using jQuery
     $(document).on("click", ".delete-this-record", function () {
         let recordId = $(this).data("record-id");
         let deleteMethod = $(this).data("delete-method");

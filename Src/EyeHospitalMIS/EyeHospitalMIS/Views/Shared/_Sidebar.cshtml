@@ -44,6 +44,31 @@
                 </a>
             </li>
 
+            <!-- Company Branch Management Start -->
+            <li class="nav-item">
+                <a class="nav-link menu-link" href="#branchManagement" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
+                    <i data-feather="grid" class="icon-dual"></i> <span data-key="t-apps">Branch Management</span>
+                </a>
+                <div class="collapse menu-dropdown" id="branchManagement">
+                    <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                            <a asp-controller="BranchManagement" asp-action="Index" class="nav-link" data-key="t-calendar"> All Branch </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="BranchManagement" asp-action="Create" class="nav-link" data-key="t-calendar">Create Branch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="BloodGroup" asp-action="Index" class="nav-link" data-key="t-calendar">Blood Group</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Home" asp-action="Index" class="nav-link" data-key="t-calendar">Room Setup</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Company Branch Management End -->
+
+
 
             <!-- System Data Start -->
             <li class="nav-item">

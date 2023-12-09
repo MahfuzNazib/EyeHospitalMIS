@@ -16,6 +16,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\Software's\ASP.NET\EyeHospitalMIS\Src\EyeHospitalMIS\EyeHospitalMIS
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/Auth/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxTaWduSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/BranchManagement/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlbWVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/BranchManagement/CreatePartialViews/_dataBaseDBConfiguration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlbWVudFxDcmVhdGVQYXJ0aWFsVmlld3NcX2RhdGFCYXNlREJDb25maWd1cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/BranchManagement/CreatePartialViews/_generalInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlbWVudFxDcmVhdGVQYXJ0aWFsVmlld3NcX2dlbmVyYWxJbmZvcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/BranchManagement/CreatePartialViews/_preview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlbWVudFxDcmVhdGVQYXJ0aWFsVmlld3NcX3ByZXZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/BranchManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoTWFuYWdlbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Software's/ASP.NET/EyeHospitalMIS/Src/EyeHospitalMIS/EyeHospitalMIS/Views/Doctor/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
