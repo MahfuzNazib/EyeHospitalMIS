@@ -14,7 +14,7 @@ namespace EysHospitalMIS.Models.SecurityManager.User
         public string LAST_NAME { get; set;}
         public string FULL_NAME { get; set; }
         public string EMAIL { get; set; }
-        public string CONTACT_NO { get; set; }
+        public string CONTACT_NO { get; set; } = string.Empty;
         public int DESIGNATION_ID { get; set; }
         public int BRANCH_ID { get; set; }
         public int IS_ACTIVE { get; set; }

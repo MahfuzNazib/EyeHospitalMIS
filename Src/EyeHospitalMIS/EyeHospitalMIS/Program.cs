@@ -1,7 +1,11 @@
+using EysHospitalMIS.BLL.IManager.SecurityManager;
 using EysHospitalMIS.BLL.IManager.SystemData;
+using EysHospitalMIS.BLL.Manager.SecurityManager;
 using EysHospitalMIS.BLL.Manager.SystemData;
 using EysHospitalMIS.DAL.Data;
+using EysHospitalMIS.DAL.IRepository.SecurityManager;
 using EysHospitalMIS.DAL.IRepository.SystemData;
+using EysHospitalMIS.DAL.Repository.SecurityManager;
 using EysHospitalMIS.DAL.Repository.SystemData;
 
 namespace EyeHospitalMIS
@@ -18,6 +22,9 @@ namespace EyeHospitalMIS
 
             builder.Services.AddScoped<IDepartmentManager, DepartmentManager>();
             builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+
+            builder.Services.AddScoped<IRoleManager, RoleManager>();
+            builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 
             var app = builder.Build();
 

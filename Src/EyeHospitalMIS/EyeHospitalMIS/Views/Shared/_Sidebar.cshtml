@@ -44,6 +44,30 @@
                 </a>
             </li>
 
+            <!-- Security Manager Start -->
+            <li class="nav-item">
+                <a class="nav-link menu-link" href="#securityManager" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
+                    <i data-feather="grid" class="icon-dual"></i> <span data-key="t-apps">Security Manager</span>
+                </a>
+                <div class="collapse menu-dropdown" id="securityManager">
+                    <ul class="nav nav-sm flex-column">
+                        <li class="nav-item">
+                            <a asp-controller="Role" asp-action="Index" class="nav-link" data-key="t-calendar"> Role </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Role" asp-action="Create" class="nav-link" data-key="t-calendar">User</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="BranchManagement" asp-action="Index" class="nav-link" data-key="t-calendar">Branch Manager</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="BranchManagement" asp-action="Create" class="nav-link" data-key="t-calendar">DB Backup</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <!-- Security Manager End -->
+
             <!-- Company Branch Management Start -->
             <li class="nav-item">
                 <a class="nav-link menu-link" href="#branchManagement" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">

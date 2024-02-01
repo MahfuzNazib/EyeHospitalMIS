@@ -17,4 +17,9 @@
     <ProjectReference Include="..\EysHospitalMIS.Models\EysHospitalMIS.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\SecurityManager\User\" />
+    <Folder Include="Views\SecurityManager\User\" />
+  </ItemGroup>
+
 </Project>

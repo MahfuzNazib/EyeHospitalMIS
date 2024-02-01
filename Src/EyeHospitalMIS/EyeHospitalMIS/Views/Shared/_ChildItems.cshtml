@@ -1,0 +1,19 @@
+﻿@model IEnumerable<EysHospitalMIS.Models.SecurityManager.Role.RolePermission>
+
+@if (Model != null && Model.Any())
+{
+    <ul>
+        @foreach (var childItem in Model)
+        {
+            <div class="form-check form-check-success mt3">
+                <input class="form-check-input" type="checkbox" id="formCheck_@childItem.ID">
+                <label class="form-check-label" for="formCheck_@childItem.ID">
+                    @childItem.DISPLAY_NAME
+                </label>
+                <!-- Hidden Input For Getting Permission Id -->
+                <input type="hidden" name="PERMISSION_ID[]" value="@childItem.ID" >
+            </div>
+            @Html.Partial("_ChildItems", Model.Where(p => p.PARENT_ID == childItem.ID).ToList())
+        }
+    </ul>
+}

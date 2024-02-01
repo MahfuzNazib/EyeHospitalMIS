@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Add New Role";
+}
+
+@model List<EysHospitalMIS.Models.SecurityManager.Role.RolePermission>
+
+<div id="PlaceHolderHere"></div>
+<div class="main-content">
+    <div class="page-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="h-100">
+
+                        <!-- Main Page Content Start -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title mb-0">Create New Role</h4>
+                                    </div>
+                                    <div class="card-body" style="margin-top:-4%;">
+                                        <form method="post" asp-controller="Role" asp-action="Create" class="form-steps" autocomplete="off">
+                                            <div class="text-center pb-4 mb-1">
+                                                <img src="assets/images/logo-dark.png" alt="" height="17">
+                                            </div>
+                                            <div class="row mb-3 mt-3">
+                                                <div class="col-md-6">
+                                                    <input type="text" name="ROLE_NAME" class="form-control" placeholder="Enter Role Name" />
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input type="text" name="DESCRIPTION" class="form-control" placeholder="Role Description" />
+                                                </div>
+                                                <!-- Main Body Card Start -->
+                                                @{
+                                                    var moduleWiseGroups = Model.GroupBy(x => x.MODULE_ID);
+                                                }
+                                                @foreach (var moduleGroup in moduleWiseGroups)
+                                                {
+                                                    <div class="row">
+                                                        <div class="col-md-12 mb-2 mt-3">
+                                                            <div class="card ribbon-box border shadow-none mb-lg-0" style="margin-right:-22px">
+                                                                <div class="card-body">
+                                                                    <div class="ribbon ribbon-primary ribbon-shape">
+                                                                        @moduleGroup.First().DISPLAY_NAME
+                                                                        <!-- Hidden Input For Getting Permission Id -->
+                                                                        <input type="hidden" name="PERMISSION_ID[]" value="@moduleGroup.First().ID">
+                                                                    </div>
+                                                                    <div class="ribbon-content text-muted mt-4">
+                                                                        <div class="row">
+                                                                            @{
+                                                                                var topLevelItems = moduleGroup.Where(p => p.PARENT_ID == null && p.IS_TOPBAR == 1).ToList();
+                                                                            }
+
+                                                                            @foreach (var topLevelItem in topLevelItems)
+                                                                            {
+                                                                                <div class="col-md-4">
+                                                                                    <div class="form-check form-switch form-switch-info mt-3">
+                                                                                        <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck_@topLevelItem.ID" value="@topLevelItem.ID">
+                                                                                        <label class="form-check-label" for="SwitchCheck_@topLevelItem.ID">@topLevelItem.DISPLAY_NAME</label>
+                                                                                        <!-- Hidden Input For Getting Permission Id -->
+                                                                                        <input type="hidden" name="PERMISSION_ID[]" value="@topLevelItem.ID" >
+                                                                                    </div>
+                                                                                    <div class="ml-3">
+                                                                                        @Html.Partial("_ChildItems", moduleGroup.Where(p => p.PARENT_ID == topLevelItem.ID))
+                                                                                    </div>
+                                                                                </div>
+                                                                            }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                                <!-- Main Body Card End -->
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <button class="btn btn-danger btn-sm">Reset</button>
+                                                    <button type="submit" class="btn btn-success btn-sm">Save</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Main Content End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/Modules/SecurityManager/CreateNewRole.js"></script>
+}
