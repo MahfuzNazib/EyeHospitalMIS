@@ -27,5 +27,10 @@ namespace EysHospitalMIS.BLL.Manager.SecurityManager
         {
             return iRoleRepository.GetAllRolePermission();
         }
+
+        public void SaveNewRolePermission(RolePermissionRequest rolePermissionRequest)
+        {
+            iRoleRepository.SaveNewRolePermission(rolePermissionRequest);
+        }
     }
 }

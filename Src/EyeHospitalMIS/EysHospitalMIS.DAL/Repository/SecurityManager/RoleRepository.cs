@@ -75,5 +75,43 @@ namespace EysHospitalMIS.DAL.Repository.SecurityManager
 
             return permissions;
         }
+
+        public void SaveNewRolePermission(RolePermissionRequest rolePermissionRequest)
+        {
+            int roleId = SaveNewRole(rolePermissionRequest);
+            SavePermissionData(rolePermissionRequest, roleId);
+        }
+
+        private int SaveNewRole(RolePermissionRequest rolePermissionRequest)
+        {
+            int insertedRoleId;
+            string query = @"SP_SM_ROLE_CREATE @NAME, @IS_ACTIVE, @DESCRIPTION, @BRANCH_ID";
+            List<param> param = new List<param>();
+            param.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@NAME", SqlValue = rolePermissionRequest.ROLE_NAME });
+            param.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@IS_ACTIVE", SqlValue = rolePermissionRequest.IS_ACTIVE });
+            param.Add(new param { SqlDbType = SqlDbType.VarChar, ParamName = "@DESCRIPTION", SqlValue = rolePermissionRequest.DESCRIPTION });
+            param.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@BRANCH_ID", SqlValue = rolePermissionRequest.BRANCH_ID });
+
+            insertedRoleId = _dbContext.ExecuteQueryWithId(query, param);
+            return insertedRoleId;
+        }
+
+        private void SavePermissionData(RolePermissionRequest rolePermissionRequest, int roleId)
+        {
+            
+            if (rolePermissionRequest.PERMISSION_ID != null)
+            {
+                foreach (int permissionId in rolePermissionRequest.PERMISSION_ID)
+                {
+                    string query = @"SP_SM_ROLE_PREMISSION_CREATE @ROLE_ID, @PERMISSION_ID, @STATUS";
+                    List<param> param = new List<param>();
+
+                    param.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@ROLE_ID", SqlValue = roleId });
+                    param.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@PERMISSION_ID", SqlValue = permissionId });
+                    param.Add(new param { SqlDbType = SqlDbType.Int, ParamName = "@STATUS", SqlValue = rolePermissionRequest.IS_ACTIVE });
+                    _dbContext.ExecuteQuery(query, param);
+                }
+            }
+        }
     }
 }

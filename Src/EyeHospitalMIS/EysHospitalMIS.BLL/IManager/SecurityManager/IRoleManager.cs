@@ -12,5 +12,6 @@ namespace EysHospitalMIS.BLL.IManager.SecurityManager
     {
         DataBindModel GetAllRoles(int Page = 1, int PerPage = 10);
         List<RolePermission> GetAllRolePermission();
+        void SaveNewRolePermission(RolePermissionRequest rolePermissionRequest);
     }
 }

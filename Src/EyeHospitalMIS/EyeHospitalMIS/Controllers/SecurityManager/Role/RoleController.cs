@@ -48,7 +48,13 @@ namespace EyeHospitalMIS.Controllers.SecurityManager.Role
 
         public IActionResult SaveNewRole(RolePermissionRequest rolePermissionRequest)
         {
-            return View();
+            if(rolePermissionRequest.BRANCH_ID == 0) 
+            {
+                rolePermissionRequest.BRANCH_ID = Convert.ToInt32(1);
+            }
+
+            roleManager.SaveNewRolePermission(rolePermissionRequest);
+            return RedirectToAction("Index");
         }
     }
 }

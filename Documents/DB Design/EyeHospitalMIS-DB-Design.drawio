@@ -1,11 +1,11 @@
-<mxfile host="Electron" modified="2023-12-09T10:41:49.508Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="NRJBUAx_Do9ba0K5UPZk" version="22.1.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-02-02T02:26:48.067Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="NZJZ338cyXAFiZJTwcKp" version="23.0.2" type="device">
   <diagram name="Page-1" id="WirfSdKMwHIBQMpA1WTf">
-    <mxGraphModel dx="401" dy="876" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="none" math="0" shadow="0">
+    <mxGraphModel dx="574" dy="295" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="9XKF0GM-w9WCjBuBjqWl-1" value="HSM_SD_DEPARTMENTS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="2100" y="1500" width="180" height="130" as="geometry" />
+          <mxGeometry x="160" y="670" width="180" height="130" as="geometry" />
         </mxCell>
         <mxCell id="9XKF0GM-w9WCjBuBjqWl-2" value="ID&lt;br&gt;NAME&lt;br&gt;SHORT_NAME&lt;br&gt;DEPARTMENT_ICON&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="9XKF0GM-w9WCjBuBjqWl-1" vertex="1">
           <mxGeometry y="50" width="180" height="80" as="geometry" />
@@ -65,12 +65,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="cyWEmb_pq1mqA_iS7TmN-11" value="HMS_SM_ROLE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="490" y="100" width="190" height="110" as="geometry">
+          <mxGeometry x="490" y="100" width="190" height="140" as="geometry">
             <mxRectangle x="820" y="300" width="210" height="50" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cyWEmb_pq1mqA_iS7TmN-12" value="ID&lt;br&gt;NAME&lt;br&gt;IS_ACTIVE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="cyWEmb_pq1mqA_iS7TmN-11" vertex="1">
-          <mxGeometry y="50" width="190" height="60" as="geometry" />
+        <mxCell id="cyWEmb_pq1mqA_iS7TmN-12" value="ID&lt;br&gt;NAME&lt;br&gt;DESCRIPTION&lt;br&gt;BRANCH_ID [Default value is 1]&lt;br&gt;IS_ACTIVE" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="cyWEmb_pq1mqA_iS7TmN-11" vertex="1">
+          <mxGeometry y="50" width="190" height="90" as="geometry" />
         </mxCell>
         <mxCell id="cyWEmb_pq1mqA_iS7TmN-13" value="HMS_SM_PERMISSION" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="720" y="100" width="190" height="150" as="geometry">
@@ -113,13 +113,13 @@
         <mxCell id="cyWEmb_pq1mqA_iS7TmN-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="cyWEmb_pq1mqA_iS7TmN-14" target="cyWEmb_pq1mqA_iS7TmN-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zDMzNsQOM4Glmt_9kkiP-1" value="HMS_SM_MODULE_TABLE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="zDMzNsQOM4Glmt_9kkiP-1" value="HMS_SM_MODULE_TABLE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="40" y="300" width="190" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="zDMzNsQOM4Glmt_9kkiP-2" value="ID&lt;br&gt;MODULE_ID&lt;br&gt;TABLE_NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="zDMzNsQOM4Glmt_9kkiP-1">
+        <mxCell id="zDMzNsQOM4Glmt_9kkiP-2" value="ID&lt;br&gt;MODULE_ID&lt;br&gt;TABLE_NAME&lt;br&gt;STATUS" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" parent="zDMzNsQOM4Glmt_9kkiP-1" vertex="1">
           <mxGeometry y="50" width="190" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="zDMzNsQOM4Glmt_9kkiP-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="cyWEmb_pq1mqA_iS7TmN-6" target="zDMzNsQOM4Glmt_9kkiP-2">
+        <mxCell id="zDMzNsQOM4Glmt_9kkiP-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cyWEmb_pq1mqA_iS7TmN-6" target="zDMzNsQOM4Glmt_9kkiP-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>

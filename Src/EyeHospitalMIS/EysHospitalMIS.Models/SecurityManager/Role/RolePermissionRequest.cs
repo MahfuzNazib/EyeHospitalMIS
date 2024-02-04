@@ -9,6 +9,9 @@ namespace EysHospitalMIS.Models.SecurityManager.Role
     public class RolePermissionRequest
     {
         public string ROLE_NAME { get; set; } = string.Empty;
-        public int[]? PERMISSION_ID { get; set; }
+        public string DESCRIPTION { get; set; } = string.Empty;
+        public int BRANCH_ID { get; set; }
+        public int[] PERMISSION_ID { get; set; }
+        public int IS_ACTIVE { get; set; } = 1;
     }
 }
